@@ -1,12 +1,12 @@
 {
   "name": "@kachit/angular-api-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Angular API utils",
   "license": "MIT",
   "homepage": "https://github.com/Kachit/angular-api-utils",
   "author": {
     "name": "Kachit",
-    "url": "http://anton-kornilov.ru",
+    "url": "https://anton-kornilov.ru",
     "github": "https://github.com/Kachit"
   },
   "keywords": [
@@ -16,8 +16,8 @@
   ],
   "private": false,
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0"
   },
   "bugs": {
     "url": "https://github.com/Kachit/angular-api-utils/issues"

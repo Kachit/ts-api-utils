@@ -130,7 +130,7 @@
         }
       }
     },
-    "AngularApiUtils": {
+    "@kachit/angular-api-utils": {
       "root": "projects/angular-api-utils",
       "sourceRoot": "projects/angular-api-utils/src",
       "projectType": "library",
