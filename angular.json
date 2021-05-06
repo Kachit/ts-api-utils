@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-api-utils-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -130,14 +131,14 @@
         }
       }
     },
-    "AngularApiUtils": {
+    "@kachit/angular-api-utils": {
       "root": "projects/angular-api-utils",
       "sourceRoot": "projects/angular-api-utils/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/angular-api-utils/tsconfig.lib.json",
             "project": "projects/angular-api-utils/ng-package.json"
