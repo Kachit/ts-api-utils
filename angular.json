@@ -145,7 +145,8 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/angular-api-utils/ng-package.json"
+              "project": "projects/angular-api-utils/ng-package.json",
+              "tsConfig": "projects/angular-api-utils/tsconfig.lib.prod.json"
             }
           }
         },
