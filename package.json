@@ -21,10 +21,21 @@
     "nestjs",
     "http"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest --coverage"
+  },
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
-  ]
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
 }
