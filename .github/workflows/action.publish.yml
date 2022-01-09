@@ -18,11 +18,11 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: 'build'
-          run: |
-            git config --global user.name "${{ github.actor }}"
-            git config --global user.email "github-action-${{ github.actor }}@users.noreply.github.com"
-            npm run build
-            npm version ${{ github.ref_name }}
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "github-action-${{ github.actor }}@users.noreply.github.com"
+          npm run build
+          npm version ${{ github.ref_name }}
 
       - name: 'publish'
         run: |
