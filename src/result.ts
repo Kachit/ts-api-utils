@@ -1,6 +1,9 @@
+export { Error } from './error';
+export { MetaData } from './meta';
+
 export class Result {
-  success = true;
+  success: boolean;
   data: any;
   meta: any;
-  errors: string[];
+  errors: Error[];
 }

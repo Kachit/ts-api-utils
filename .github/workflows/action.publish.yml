@@ -18,10 +18,11 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: 'build'
-        run: npm run build-lib
-
-      - id: get_version
-        uses: battila7/get-version-action@v2
+          run: |
+            git config --global user.name "${{ github.actor }}"
+            git config --global user.email "github-action-${{ github.actor }}@users.noreply.github.com"
+            npm run build
+            npm version ${{ github.ref_name }}
 
       - name: 'publish'
         run: |
